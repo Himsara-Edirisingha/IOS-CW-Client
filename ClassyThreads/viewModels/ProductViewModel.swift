@@ -17,7 +17,7 @@ class ProductViewModel: ObservableObject {
     }
      
     func fetchProducts() {
-        guard let url = URL(string: "http://192.168.1.9:3001/api/products") else {
+        guard let url = URL(string: "https://ios-back-end.onrender.com/api/products") else {
             print("Invalid URL")
             return
         }

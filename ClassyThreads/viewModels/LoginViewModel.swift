@@ -17,7 +17,7 @@ class LoginViewModel: ObservableObject {
 
     
     func loginUser(username:String,password:String) {
-        guard let url = URL(string: "http://192.168.1.9:3001/api/login") else {
+        guard let url = URL(string: "https://ios-back-end.onrender.com/api/login") else {
             self.alertMessage = "Invalid URL"
             self.showingAlert = true
             return

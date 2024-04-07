@@ -14,7 +14,7 @@ class CartViewModel: ObservableObject {
     @Published var showingAlert: Bool = false
     
     func fetchCartItem(user:User) {
-        guard let url = URL(string: "http://192.168.1.9:3001/api/carts/user/\(user.id)") else {
+        guard let url = URL(string: "https://ios-back-end.onrender.com/api/carts/user/\(user.id)") else {
             print("Invalid URL")
             return
         }
@@ -62,7 +62,7 @@ class CartViewModel: ObservableObject {
             "imageName":cartItem.imageName
         ]
         
-        guard let url = URL(string: "http://192.168.1.9:3001/api/carts/") else {
+        guard let url = URL(string: "https://ios-back-end.onrender.com/api/carts/") else {
             print("Invalid URL")
             return
         }

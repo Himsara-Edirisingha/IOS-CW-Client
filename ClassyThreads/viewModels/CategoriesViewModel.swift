@@ -15,7 +15,7 @@ class CategoryViewModel: ObservableObject {
     }
     
     func fetchCategories() {
-        guard let url = URL(string: "http://192.168.1.9:3001/api/categories") else {
+        guard let url = URL(string: "https://ios-back-end.onrender.com/api/categories") else {
             print("Invalid URL")
             return
         }
